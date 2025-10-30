@@ -1,0 +1,6 @@
+export enum StatusDto {
+  OPEN = 'OPEN',
+  ACCEPTED = 'ACCEPTED',
+  INPROGRESS = 'INPROGRESS',
+  DELIVERED = 'DELIVERED',
+}
