@@ -33,5 +33,4 @@ test('create order and delete order by id and get deleted order', async ({ reque
   expect.soft(orderId).toBeGreaterThan(0)
   await deleteOrder(request, jwt, orderId)
   await getDeletedOrderById(request, jwt, orderId)
-
 })
