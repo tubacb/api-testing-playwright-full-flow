@@ -27,7 +27,7 @@ test('create order and find order by id', async ({ request }) => {
   expect.soft(order.id).toBe(orderId)
   expect.soft(order.status).toBe(StatusDto.OPEN)
 })
-test('create order and delete order by id and get deleted order', async ({ request }) => {
+test('create order and delete order by id and get deleted order by id', async ({ request }) => {
   const orderId = await createOrder(request, jwt)
   console.log(orderId)
   expect.soft(orderId).toBeGreaterThan(0)
